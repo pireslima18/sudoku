@@ -1,0 +1,218 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+hr{
+	width: 60%;
+	max-width: 500px;
+	margin: auto;
+	margin-top: -15px;
+}
+
+
+#painel{
+	display: flex;
+}
+
+#time{
+	margin: 20px 30px 20px auto;
+	padding: 6px;
+}
+
+#errors{
+	background: rgb(252, 48, 48);
+	color: whitesmoke;
+	width: 50px;
+	margin: 20px auto 20px 0;
+	padding: 6px;
+	border-radius: 6px;
+}
+
+#button{
+	background: limegreen;
+	border-radius: 6px;
+	border: none;
+	color: whitesmoke;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.board{
+	width: 450px;
+	height: 450px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.painel{
+	border: 1px solid red;
+}
+
+.tile{
+	width: 48px;
+	height: 48px;
+	border: 1px solid lightgray;
+
+	/* text */
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.digits{
+	width: 450px;
+	height: 50px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.number{
+	width: 44px;
+	height: 44px;
+	border: 1px solid black;
+	margin: 2px;
+
+	/* text */
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.number-selected{
+	background: gray;
+}
+
+.tile-start{
+	background: whitesmoke;
+}
+
+.horizontal-line{
+	border-bottom: 1px solid black;
+}
+.vertical-line{
+	border-right: 1px solid black;
+}
+
+
+/* score */
+
+#score{
+	margin: auto;
+	margin-top: 80px;
+	width: 100%;
+	max-width: 600px;
+	padding-bottom: 1px;
+	background: #1C1C1C;
+	color: white;
+	border-radius: 5px;
+}
+
+.players table{
+	background: white;
+	width: 95%;
+	margin: 15px auto;
+	border-collapse: separate;
+  	border-spacing: 6px 10px;
+  	border-radius: 3px;
+}
+
+table th{
+	border: 1px solid black;
+	border-radius: 8px;
+	text-align: left;
+	text-align: center;
+	padding: 6px;
+}
+
+table td{
+	border: 1px solid red;
+	border-radius: 8px;
+	margin: 20px;
+	text-align: center;
+	padding: 6px;
+}
+
+.name{
+	/*width: 180px;*/
+	text-align: left;
+}
+
+
+.display-none{
+	display: none;
+}
+
+/* swal */
+
+.swal-icon {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/* media */
+@media(max-width: 400px) {
+ 
+	.board{
+		width: 300px;
+		height: 300px;
+	}
+
+	.tile{
+		width: 31px;
+		height: 32px;
+		font-size: 15px;
+	}
+
+	.digits{
+		width: 300px;
+		height: 30px;
+	}
+
+	.number{
+		width: 27px;
+		height: 27px;
+		font-size: 15px;
+	}
+
+	/* score */
+
+	#score table{
+		font-size: 0.8em;
+	}
+}
+
+@media(max-width: 468.99px) {
+ 
+	.board{
+		width: 300px;
+		height: 300px;
+	}
+
+	.tile{
+		width: 31px;
+		height: 32px;
+		font-size: 15px;
+	}
+
+	.digits{
+		width: 300px;
+		height: 30px;
+	}
+
+	.number{
+		width: 27px;
+		height: 27px;
+		font-size: 15px;
+	}
+}
